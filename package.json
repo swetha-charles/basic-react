@@ -1,15 +1,24 @@
 {
+  "type": "module",
   "scripts": {
     "build": "tsc",
+    "build-2-rollup": "npm run build && npx rollup --config",
     "start-1-basic": "npx http-server ./src/1-basic-html/ -o -p 9999 -c-1"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
     "@types/node": "^22.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "rollup": "^4.19.2",
+    "typescript": "^5.5.4",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
