@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start-1-basic": "npx http-server ./src/1-basic-html/ -o -p 9999 -c-1"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
